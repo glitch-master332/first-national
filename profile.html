@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - First National Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <aside class="sidebar">
+        <img src="assets/logo.jpeg" class="sidebar-logo">
+        <nav>
+            <a href="dashboard.html">🏠 Dashboard</a>
+            <a href="profile.html">👤 Profile</a>
+            <a href="transactions.html">📄 Transactions</a>
+            <button onclick="toggleDarkMode()" class="dark-toggle">🌓 Dark Mode</button>
+        </nav>
+    </aside>
+    <div class="dashboard-container">
+        <header>
+            <h1>Your Profile</h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+        <section class="profile-section">
+            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <p><strong>Name:</strong> Winston Ighodaro</p>
+                <p><strong>Email:</strong> winston12@gmail.com</p>
+                <p><strong>Phone:</strong> (240) 813-9203</p>
+                <p><strong>Address:</strong> Redacted</p>
+                <p><strong>Account Opened:</strong> March 17, 2024</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

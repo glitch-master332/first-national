@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - First National Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <aside class="sidebar">
+        <img src="assets/logo.jpeg" class="sidebar-logo">
+        <nav>
+            <a href="dashboard.html">🏠 Dashboard</a>
+            <a href="profile.html">👤 Profile</a>
+            <a href="transactions.html">📄 Transactions</a>
+            <button onclick="toggleDarkMode()" class="dark-toggle">🌓 Dark Mode</button>
+        </nav>
+    </aside>
+    <div class="dashboard-container">
+        <header>
+            <h1>Welcome, Winston Ighodaro</h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+
+        <!-- Card Section -->
+        <section class="card-section">
+            <h2>Your Card</h2>
+            <div class="card-display">
+                <div class="card-brand">VISA</div>
+                <div class="card-num">4539 8710 1234 4321</div>
+                <div class="card-row">
+                    <span>Exp: 09/27</span>
+                    <span>CVV: 739</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accounts -->
+        <section class="accounts">
+            <div class="account-card">
+                <h3>🏦 Checking Account</h3>
+                <p class="acct-number">Acct #: 0042819200</p>
+                <p class="balance">$14,928.23</p>
+            </div>
+            <div class="account-card">
+                <h3>💰 Savings Account</h3>
+                <p class="acct-number">Acct #: 0027394110</p>
+                <p class="balance">$22,409.45</p>
+            </div>
+        </section>
+
+        <!-- Transactions -->
+        <section class="transactions">
+            <h2>Recent Transactions</h2>
+            <table>
+                <tr><th>Date</th><th>Description</th><th>Amount</th></tr>
+                <tr><td>2025-06-27</td><td>Amazon Purchase</td><td>-$129.99</td></tr>
+                <tr><td>2025-06-25</td><td>Payroll Deposit</td><td>+$2,000.00</td></tr>
+                <tr><td>2025-06-24</td><td>Netflix Subscription</td><td>-$15.49</td></tr>
+                <tr><td>2025-06-21</td><td>Transfer to Savings</td><td>-$300.00</td></tr>
+                <tr><td>2025-06-18</td><td>Spotify</td><td>-$9.99</td></tr>
+                <tr><td>2025-06-17</td><td>ATM Withdrawal</td><td>-$60.00</td></tr>
+                <tr><td>2025-06-14</td><td>Starbucks</td><td>-$8.25</td></tr>
+                <tr><td>2025-06-12</td><td>Uber Ride</td><td>-$14.65</td></tr>
+                <tr><td>2025-06-11</td><td>Electric Bill</td><td>-$74.30</td></tr>
+                <tr><td>2025-06-09</td><td>Mobile Deposit</td><td>+$450.00</td></tr>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
